@@ -18,7 +18,7 @@ describe("Gilded Rose", function() {
         expect(items[0].quality).toEqual(5);
     });
 });
-/*
+
 describe("Check if sellIn decreases", function () {
     it("Check if sellIn decreases", function () {
         const gildedRose = new Shop([new Item("foo", 5, 5)]);
@@ -118,7 +118,7 @@ describe("Back-Stage Pass", function() {
         expect(items[0].quality).toEqual(50);
     })
 })
-*/
+
 
 // describe("Conjured Items", function() {
 //     it("Does Sell-in decrease", function() {
