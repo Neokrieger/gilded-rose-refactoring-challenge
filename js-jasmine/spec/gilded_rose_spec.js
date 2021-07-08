@@ -2,7 +2,7 @@ var {Shop, Item} = require('../src/gilded_rose.js');
 describe("Gilded Rose", function() {
 
   it("Check if item has name", function() {
-    const gildedRose = new Shop([ new Item("foo", 0, 0) ]);
+    const gildedRose = new Shop([ new Item("foo", 5, 5) ]);
     const items = gildedRose.updateQuality();
     expect(items[0].name).toEqual("foo");
   });
@@ -18,7 +18,7 @@ describe("Gilded Rose", function() {
         expect(items[0].quality).toEqual(5);
     });
 });
-
+/*
 describe("Check if sellIn decreases", function () {
     it("Check if sellIn decreases", function () {
         const gildedRose = new Shop([new Item("foo", 5, 5)]);
@@ -65,6 +65,7 @@ describe("Aged Briee", function() {
         expect(items[0].quality).toEqual(50);
     })
 })
+
 
 describe("Sulfura", function() {
     it("No Sell-in decrease", function() {
@@ -117,6 +118,7 @@ describe("Back-Stage Pass", function() {
         expect(items[0].quality).toEqual(50);
     })
 })
+*/
 
 // describe("Conjured Items", function() {
 //     it("Does Sell-in decrease", function() {
